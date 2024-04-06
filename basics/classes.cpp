@@ -12,7 +12,7 @@ class book{
             std::cout << "Number of pages: " << pages << '\n';
         }
 
-        book(std::string titleC,std::string authorC,int pagesC){
+        book(std::string titleC = "Unknown",std::string authorC = "Unknown",int pagesC = 0){
             title = titleC;
             author = authorC;
             pages = pagesC;
@@ -21,9 +21,12 @@ class book{
 
 int main(){
 
+    book book0;
     book book1("The Catcher in the rye","J.D. Salinger",234);
     book book2("On the Road","Jack Kerouac",320);
-    
+
+    book0.info();
+    std::cout << '\n';
     book1.info();
     std::cout << '\n';
     book2.info();
