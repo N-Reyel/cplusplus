@@ -17,6 +17,7 @@ class book{
             author = authorC;
             pages = pagesC;
         }
+        ~book(){}
 };
 
 int main(){
