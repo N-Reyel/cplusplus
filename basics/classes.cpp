@@ -5,6 +5,13 @@ class book{
         std::string title;
         std::string author;
         int pages;
+
+        void info(){
+            std::cout << "Title: " << title << '\n';
+            std::cout << "Author: " << author << '\n';
+            std::cout << "Number of pages: " << pages << '\n';
+
+        }
 };
 
 int main(){
@@ -19,13 +26,9 @@ int main(){
     book2.author = "Jack Kerouac";
     book2.pages = 320;
 
-    std::cout << book1.title << '\n';
-    std::cout << book1.author << '\n';
-    std::cout << book1.pages << '\n';
-
-    std::cout << book2.title << '\n';
-    std::cout << book2.author << '\n';
-    std::cout << book2.pages << '\n';
+    book1.info();
+    std::cout << '\n';
+    book2.info();
 
     return 0;
 }
