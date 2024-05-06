@@ -6,7 +6,7 @@ class Vampire{
             std::cout << "Drinks blood ";
         }
         void noSun(){
-            std::cout << "Dies in the Sun ";
+            std::cout << "Dies in the Sunlight ";
         }
         void immortal(){
             std::cout << "Is Immortal ";
@@ -17,6 +17,9 @@ class Dracula : public Vampire{
     public:
         void vampires(){
             std::cout << "Creates other vampires ";
+        }
+        void noSun(){
+            std::cout << "Does not die in the Sunlight ";
         }
 };
 
@@ -35,6 +38,7 @@ int main(){
     std::cout << "Vlad ";
     vlad.immortal();
     vlad.drinkBlood();
+    vlad.noSun();
     vlad.vampires();
 
 
